@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aves - Campus Charqueadas</title>
+    <link href="./src/css/style.css" rel="stylesheet" >
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="./src/js/jquery-3.6.3.min.js" type="text/javascript"></script>
+    <script src="./src/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #127c26;">
+        <div class="container-fluid">
+            <img src="/src/img/icoIF.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <a style="color:white" class="navbar-brand" href="#">Projeto aves IFSUL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          </div>
+        </div>
+      </nav>
+    <!--sobre a ave-->
+
+    <div class="card mb-3">
+        <img src="./src/img/p5.jpg" style="height: 50vw" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nome da espécie</h5>
+          <p class="card-text">Decrição da espécie</p>
+          <p class="card-text"><div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Onde encontrar
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Você pode encontrar esta espécie em tal parte do campus...
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Galeria de imagens
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./src/img/p5.jpg" style="height: 100%;width: 100%;object-fit: contain;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Foto enviada por: </h5>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Curiosidades
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Algumas curiosidades
+                </div>
+              </div>
+            </div>
+          </div></p>
+        </div>
+      </div>
+      <!--divisoria-->
+
+      
+      <div id="sobrenos" class="divisor">
+        <h3 style="color:white" class="text-center">Tem uma foto dele? Envie para nossa galeria!</h3>
+      </div>
+     
+      <!--Enviar foto-->
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Seu nome</label>
+        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email acadêmico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nomesobrenome.ch000@academico.ifsul.edu.br">
+      </div>
+
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Foto da espécie</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+      <div class="col-12">
+        <button style="margin-bottom: 30px;" class="btn btn-primary" type="submit">Contribuir</button>
+      </div>
+       <!--divisoria-->
+
+      
+       <div id="sobrenos" class="divisor">
+        <h3 style="color:white" class="text-center">Deixe um comentário!</h3>
+      </div>
+     
+     
+      <!--comentarios-->
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email Acadêmico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nomesobrenome.ch000@academico.ifsul.edu.br">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentário</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <button style="margin-bottom: 30px;" class="btn btn-primary" type="submit">Comentar</button>
+      </div>
+</body>
+</html>
